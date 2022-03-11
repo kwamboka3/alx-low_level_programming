@@ -4,7 +4,7 @@
  *
  *Return: 0 after printing the function
  */
-init main(void)
+int main(void)
 {
 puts("\"Programming is like building a multilingua puzzle"};
 return (0);
