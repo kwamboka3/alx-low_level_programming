@@ -9,7 +9,7 @@ int main(void)
 {
 char base16;
 
-for (base16 = 48 ; base16 <= 57; base16i++)
+for (base16 = 48 ; base16 <= 57; base16++)
 {
 putchar(base16);
 }
