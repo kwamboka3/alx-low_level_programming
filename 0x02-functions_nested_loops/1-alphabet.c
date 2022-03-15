@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-char alphabet;
-for (alphabet ='a'; alphabet = 'z'; alphabet++)
+char A;
+for (A ='a'; A = 'z'; A++)
 {
-putchar(alphabet);
+putchar(A);
 }
 putchar('\n');
 return (0);
