@@ -3,7 +3,6 @@
  * main - Entry point
  *
  * Return: always 0 (success/correct)
- *
  */
 int main(void)
 {
