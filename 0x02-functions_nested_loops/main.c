@@ -1,11 +1,17 @@
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: always 0 (success/correct)
  */
 int main(void)
 {
-	print_alphabet();
-	return (0);
+char alph;
+
+for (alph = 'a'; alph <= 'z'; alph++)
+{
+putchar(alph);
+}
+putchar('\n');
+return (0);
 }
