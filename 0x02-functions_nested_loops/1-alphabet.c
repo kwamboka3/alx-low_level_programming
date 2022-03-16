@@ -4,14 +4,14 @@
  *
  * Return: always 0 (success/correct)
  */
-int main(void)
+void print_alphabet(void)
 {
 char alph;
 
 for (alph = 'a'; alph <= 'z'; alph++)
 {
-putchar(alph);
+_putchar(alph);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
