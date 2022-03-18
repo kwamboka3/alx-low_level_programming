@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_number - prints an integer
  * @n: print integer
@@ -8,9 +9,8 @@ void print_number(int n)
 {
 if (n >= 48 && n <= 57)
 {
-putchar(n);
+_putchar(n);
 }
-
 else
 {
 return (0);
