@@ -7,12 +7,6 @@
  */
 void print_number(int n)
 {
-if (n >= 48 && n <= 57)
-{
 _putchar(n);
-}
-else
-{
 return (0);
-}
 }
