@@ -6,7 +6,7 @@
  */
 void print_number(int n)
 {
-if (n >=0 && n <=9)
+if (n >= 48 && n <= 57)
 {
 _putchar(n);
 }
