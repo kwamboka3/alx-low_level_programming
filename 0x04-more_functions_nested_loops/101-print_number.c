@@ -6,5 +6,11 @@
  */
 void print_number(int n)
 {
-_putchar(n);
+while (n < 10)
+{
+_putchar (n + '0');
+n++;
+}
+
+_putchar ('\n');
 }
