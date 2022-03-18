@@ -6,5 +6,12 @@
  */
 void print_number(int n)
 {
+if (n >=0 && n <=9)
+{
 _putchar(n);
+}
+else
+{
+return (0);
+}
 }
