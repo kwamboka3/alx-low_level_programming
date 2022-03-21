@@ -9,17 +9,5 @@ void swap_int(int *a, int *b)
 int temp = *a;
 *a = *b;
 *b = temp;
-putchar('after swapping':a,b);
-putchar('\n');
-}
-int main()
-{
-    int a, b;
-    printf("Enter Value of a");
-    scanf("%d", &a);
-    printf("\nEnter Value of b");
-    scanf("%d", &b);
-    swap_int(a, b);
-    printf("\nAfter Swapping: a = %d, b = %d", a, b);
-    return 0;
+printf("%d, %d\n", a, b);
 }
