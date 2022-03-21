@@ -1,5 +1,5 @@
 /**
- * swap_int: swipes the two numbers
+ * swap_int: swipes the two numbers a and b
  * Return: always 0
  */
 #include <stdio.h>
