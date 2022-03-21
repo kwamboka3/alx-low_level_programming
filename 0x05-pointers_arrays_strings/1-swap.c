@@ -1,8 +1,12 @@
-// C program to swap two variables using a 
-// user defined swap()
+/**
+ * C program to swap two variables using a 
+ * user defined swap()
+ */
 #include <stdio.h>
 #include "main.h"
-// This function swaps values pointed by a and b
+/**
+ * This function swaps values pointed by a and b
+ */
 void swap(int *a, int *b)
 {
     int temp = *a;
