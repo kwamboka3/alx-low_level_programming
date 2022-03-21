@@ -17,7 +17,6 @@ int main()
     scanf("%d", &a);
     printf("Enter the second value:");
     scanf("%d", &b);
-    c = a + b;
     printf("%d + %d = %d\n", a, b);
     return 0;
 }
