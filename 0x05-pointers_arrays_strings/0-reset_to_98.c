@@ -1,16 +1,18 @@
 #include "main.h"
 #include <stdio.h>
-/**
- * rest_to_98: takes a pointer to an int as parameter and updates value
- * Return: Always 0
- */
 
-void rest_to_98(int *n)
+/**
+ * main - check the code 
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-int n;
-n = 0;
-putchar(n);
-reset_to_98(&n);
-putchar(n);
-return (0);
+    int n;
+
+    n = 402;
+    printf("n=%d\n", n);
+    reset_to_98(&n);
+    printf("n=%d\n", n);
+    return (0);
 }
