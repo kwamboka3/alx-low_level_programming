@@ -13,10 +13,11 @@ int temp = *a;
 int main()
 {
     int a, b;
-    printf("Enter the first value:");
+    printf("Enter Value of a");
     scanf("%d", &a);
-    printf("Enter the second value:");
+    printf("\nEnter Value of b");
     scanf("%d", &b);
-    printf("%d + %d = %d\n", a, b);
+    swap(a, b);
+    printf("\nAfter Swapping: a = %d, b = %d", a, b);
     return 0;
 }
