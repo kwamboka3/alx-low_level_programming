@@ -6,10 +6,9 @@
 #include "main.h"
 void swap_int(int *a, int *b)
 {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-    putchar('a');
-    putchar('b');
-    putchar('\n');
+int temp = *a;
+*a = *b;
+*b = temp;
+printf("\nAfter Swapping: a = %d, b = %d", a, b);
+putchar('\n');
 }
