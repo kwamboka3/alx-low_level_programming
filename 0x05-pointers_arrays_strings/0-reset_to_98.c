@@ -9,10 +9,10 @@
 void reset_to_98(int *n)
 {
     
-    *n = 402;
-    
-    reset_to_98(&*n);
-    putchar(*n);
+int n = 402;
+*n = &n;    
+reset_to_98(&n);
+putchar(*n);
 
-    return (0);
+return (0);
 }
