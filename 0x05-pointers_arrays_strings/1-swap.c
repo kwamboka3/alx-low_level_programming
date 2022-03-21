@@ -9,6 +9,5 @@ void swap_int(int *a, int *b)
 int temp = *a;
 *a = *b;
 *b = temp;
-printf("\nAfter Swapping: a = %d, b = %d", a, b);
-putchar('\n');
+printf("\nAfter Swapping: ", a, b);
 }
