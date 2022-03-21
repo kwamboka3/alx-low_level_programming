@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * swap_int: swipes the two numbers a and b
+ * swap_int - swipes the two numbers a and b
  *@a: print int
  *@b: print int
  * Return: always 0
