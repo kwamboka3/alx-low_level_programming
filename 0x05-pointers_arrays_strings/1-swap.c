@@ -9,7 +9,15 @@ void swap_int(int *a, int *b)
 int temp = *a;
 *a = *b;
 *b = temp;
-putchar('a');
-putchar('b');
-putchar('\n');
+}
+int main()
+{
+    int a, b;
+    printf("Enter the first value:");
+    scanf("%d", &a);
+    printf("Enter the second value:");
+    scanf("%d", &b);
+    c = a + b;
+    printf("%d + %d = %d\n", a, b);
+    return 0;
 }
