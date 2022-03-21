@@ -6,11 +6,10 @@
 */
 void rest_to_98(int *n)
 {
-*n = 0;
-int a = 98;
-*n = &a;
 
-_putchar(*n);
+*n = &98
+
+_putchar(n);
 
 return (0);
 }
