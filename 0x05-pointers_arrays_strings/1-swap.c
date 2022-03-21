@@ -1,6 +1,8 @@
 /**
  * C program to swap two variables using a 
  * user defined swap()
+ * swap: it swaps two numbers
+ * Return: always 0
  */
 #include <stdio.h>
 #include "main.h"
