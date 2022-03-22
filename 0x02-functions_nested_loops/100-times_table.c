@@ -8,8 +8,10 @@
 void print_times_table(int n)
 {
 int i;
-for (i = 1; i <= 10; ++i) {
-  printf("%d * %d = %d \n", n, i, n * i);
+for (i = 0; i <= 15; ++i)
+{
+printf("%d * %d = %d \n", n, i, n * i);
+print_times_table(n*1);
 }
 _putchar('\n');
 }
