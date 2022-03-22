@@ -14,7 +14,7 @@ c = str;
 
 for (m = 0; c[m]; m++)
 {
-printf('c[m]');
+printf("c[m]");
 }
-printf('\n');
+printf("\n");
 }
