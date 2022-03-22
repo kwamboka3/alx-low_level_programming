@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_times_table - print multiple times
  *
@@ -8,9 +7,11 @@
 void print_times_table()
 {
 int n;
+_putchar(n);
+  
 for (n >= 0;n <= 15; n++)
 {
-_putchar(n);
+break;
 }
 
 _putchar('\n');
