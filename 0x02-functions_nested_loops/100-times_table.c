@@ -8,9 +8,10 @@
 int main(void)
 {
 int n;
-for (n >= 0;n <=15; n++)
-{
 void print_times_table(n);
+if (n > = 0;n < = 15; n++)
+{
+break;
 }
 _putchar('\n');
 return (0);
