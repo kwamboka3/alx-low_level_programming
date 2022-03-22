@@ -5,6 +5,7 @@
 *
 *Return: void which means our answer is correct
 */
+
 void _puts(char *str)
 {
 char *c;
@@ -14,7 +15,7 @@ c = str;
 
 for (m = 0; c[m]; m++)
 {
-putchar("c[m]");
+_putchar (c[m]);
 }
-putchar('\n');
+_putchar('\n');
 }
