@@ -6,9 +6,17 @@
  */
 void print_times_table(int n)
 {
-for (n = 0; n <= 15; n++)
+if (n = 0)
 {
 print_times_table(n);
+}
+else if (n <= 15)
+{
+print_times_table(n);
+}
+else
+{
+return (0);
 }
 _putchar('\n');
 }
