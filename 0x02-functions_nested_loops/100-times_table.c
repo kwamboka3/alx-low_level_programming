@@ -8,7 +8,7 @@
 void print_times_table()
 {
 int n;
-for (n > = 0;n < = 15; n++)
+for (n >= 0;n <= 15; n++)
 {
 _putchar(n);
 }
