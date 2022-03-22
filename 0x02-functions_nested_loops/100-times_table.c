@@ -13,7 +13,5 @@ for (n >= 0;n <= 15; n++)
 {
 break;
 }
-
 _putchar('\n');
-
 }
