@@ -6,7 +6,7 @@
  */
 void print_times_table(int n)
 {
-if (n = 0)
+if (n >= 0)
 {
 print_times_table(n);
 }
@@ -16,7 +16,7 @@ print_times_table(n);
 }
 else
 {
-return (0);
+break;
 }
 _putchar('\n');
 }
