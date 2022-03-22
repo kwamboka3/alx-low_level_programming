@@ -18,8 +18,8 @@ i++;
 
 for (i = i - 1 ; i >= 0; i--)
 {
-puts(s[i]);
+_putchar (s[i]);
 }
 
-puts('\n');
+_putchar ('\n');
 }
