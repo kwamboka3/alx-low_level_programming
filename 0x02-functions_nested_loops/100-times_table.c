@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * print_times_table - print multiple times
  *
  * Return: Always 0.
  */
-int main(void)
+void print_times_table(n)
 {
 int n;
-void print_times_table(n);
-if (n > = 0;n < = 15; n++)
+for (n > = 0;n < = 15; n++)
 {
-break;
+_putchar(n);
 }
+
 _putchar('\n');
-return (0);
+
 }
