@@ -14,9 +14,6 @@ else if (n <= 15)
 {
 print_times_table(n);
 }
-else
-{
-break;
-}
+return (0);
 _putchar('\n');
 }
