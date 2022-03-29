@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
  * set_string - sets the value of a pointer to a char
- * @s: content is to be copied
- *@to: string
- *Return: void
+ *
+ * @s: double pointer
+ * @to: pointer
+ * Return: void
  */
-
 void set_string(char **s, char *to)
 {
 	*s = to;
