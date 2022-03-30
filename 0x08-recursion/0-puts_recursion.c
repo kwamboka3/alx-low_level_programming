@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  *_puts_recursion - prints a string
  *@s: pointer block of memory to fill
