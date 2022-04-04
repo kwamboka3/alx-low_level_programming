@@ -2,48 +2,52 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - returns a pointer to a 2 dimensional array of integers
+ * str_concat - concatenates two string
  *
- * @width: Width of grid
- * @height: height of grid
+ * @s1: the first string
+ * @s2: the string to add to @s1
  *
- * Return: NULL on failure, NULL if @width or @height is 0 or negative,
- * on success: a pointer to a 2 dimensional array of integers
+ * Return: a pointer that points to a newly allocated space which
+ * contains the contents of @s1, followed by the contents of @s2,
+ * and null terminated. Should return NULL on failure
  */
 
-int **alloc_grid(int width, int height)
+char *str_concat(char *s1, char *s2)
 {
-	int **ar;
-	int i;
-	int j;
-	int k;
+	char *s3;
+	unsigned int s1len = 0;
+	unsigned int s2len = 0;
+	unsigned int s3len;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
-	if (width <= 0 || height <= 0)
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	while (s1[s1len])
+		s1len++;
+	while (s2[s2len])
+		s2len++;
+
+	s3len = s1len + s2len;
+
+	s3 = malloc(sizeof(char) * s3len + 1);
+	if (s3 == NULL)
 		return (NULL);
 
-	ar = malloc(sizeof(int *) * height);
-	if (ar == NULL)
-		return (NULL);
-
-	for (i = 0; i < height; i++)
+	while (i < s1len)
 	{
-		ar[i] = malloc(sizeof(int) * width);
-		if (ar[i] == NULL)
-		{
-			while (i >= 0)
-			{
-				free(ar[i]);
-				i--;
-			}
-			free(ar);
-			return (NULL);
-		}
+		s3[i] = s1[i];
+		i++;
 	}
 
-	for (j = 0; j < height; j++)
+	while (i <= s3len)
 	{
-		for (k = 0; k < width; k++)
-			ar[j][k] = 0;
+		s3[i] = s2[j];
+		i++;
+		j++;
 	}
-	return (ar);
+	return (s3);
 }
