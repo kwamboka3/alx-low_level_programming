@@ -1,4 +1,4 @@
-3-get_op_func.c#include <stdio.h>
+#include <stdio.h>
 #include "3-calc.h"
 #include <string.h>
 /**
