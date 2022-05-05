@@ -4,7 +4,6 @@
  * read_textfile - reads a text file and prints to POSIX stdout
  * @filename: name of the file that's read
  * @letters: the number of letters read and printed
- *
  * Return: the actual  number of letters read and printed, 0 if file cannot be
  * opened or read, 0 if @filename is NULL, 0 if write fails or doesn't write
  * the expected amount of bytes
