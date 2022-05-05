@@ -1,4 +1,4 @@
-#include "main.h"
+#include "alx.h"
 
 /**
  * read_textfile - reads a text file and prints it to standard output
