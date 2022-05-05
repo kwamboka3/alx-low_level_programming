@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * read_textfile - check the code for Holberton School students.
@@ -6,7 +8,6 @@
 * @letters: number of letters to read and write.
 * Return: letters printed
 */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 ssize_t nletters;
