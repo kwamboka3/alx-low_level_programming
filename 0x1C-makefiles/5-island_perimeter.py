@@ -1,24 +1,26 @@
 #!/usr/bin/python3
-'''Module that holds the function def island_permiter'''
+''' Module that contains the island_perimeter function '''
 
 
 def island_perimeter(grid):
-    '''Finds the perimeter of an island'''
+    ''' Function that returns the perimeter of island described in grid '''
+    perimeter = 0
 
-    if not isinstance(grid, list):
-        return 0
-    p = 0
+    nrows = len(grid)
 
-    for row in range(len(grid)):
-        for col in range(len(grid[row])):
-            if grid[row][col] == 1:
-                p += 4
-                if row > 0 and grid[row - 1][col] == 1:
-                    p -= 1
-                if col > 0 and grid[row][col - 1] == 1:
-                    p -= 1
-                if col < (len(grid[row]) - 1) and grid[row][col + 1] == 1:
-                    p -= 1
-                if row < (len(grid) - 1) and grid[row + 1][col] == 1:
-                    p -= 1
-    return 
+    if grid != []:
+        ncolumns = len(grid[0])
+
+    for a in range(nrows):
+        for b in range(ncolumns):
+            if grid[a][b] == 1:
+                if (a - 1) == -1 or grid[a - 1][b] == 0:
+                    perimeter += 1
+                if (a + 1) == nrows or grid[a + 1][b] == 0:
+                    perimeter += 1
+                if (b - 1) == -1 or grid[a][b - 1] == 0:
+                    perimeter += 1
+                if (b + 1) == ncolumns or grid[a][b + 1] == 0:
+                    perimeter += 1
+
+    return perimeter
